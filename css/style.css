@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-VariableFont_wght.ttf");
+  }
+.body{
+    background-color: #FCFCFC;
+}
+.container 
+{
+    max-width: 1410.62px;
+    margin: 0 auto 0 auto;    
+}
+.header__top{
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.city{
+    transform: translateY(-2px);
+    margin-top: 7px;
+    margin-right: 37.38px;
+    font-family: Raleway;
+    color: #6B7276;
+    font-style: regular;
+    line-height: 100%;
+    letter-spacing: 5%;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+.menu{
+    margin-top: 7px;
+}
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+}
+.menu__item + .menu__item {
+    margin-left: 48px;
+}
+.menu__item{
+    color: #6B7276;
+    font-family: Raleway;
+    font-style: regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+}
+
+.link--arrow::after{
+    content: url(/images/arrow_down.svg);
+    position: relative;
+    left: 7px;
+    bottom: 1px;
+
+}
+.city__active::after{
+    content: url(/images/arrow_down.svg);
+    position: relative;
+    left: 35px;
+    bottom: 2px;
+}
+.city__active::before{
+    content: url(/images/dash.svg);
+    position: relative;
+    right: 19px;
+    top: 2.5px;
+}
+/*   313 182 */
