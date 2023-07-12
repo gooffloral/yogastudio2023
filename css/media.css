@@ -1,0 +1,1192 @@
+@media (max-width: 1445px){
+    /* .container
+    {
+        padding: 0 80px;
+    } */
+
+    .container.teachers__wrapper {
+        padding-top: 120px;
+    }
+    .class_type {
+        width: 350px;
+    }
+    .event__info {
+        margin-right: 50px;
+    }
+    .footer__wrapper::before
+    {
+        left: -90px;
+    }
+    .event__btns {
+        margin-top: 40px;
+    }
+    .rent__block.--bron {
+        margin-left: 59px;
+    }
+    
+    .rent__block.--msk {
+        padding-right: 200px;
+    }
+    
+    .event__slider {
+        width: 600px;
+    }
+    .class__card {
+        max-width: 374px;
+    }
+    span.line--teachers {
+        width: 400px;
+    }
+    .teacher__card {
+        max-width: 530px;
+    }
+    .questions__wrapper {
+        gap: 127px;
+    }
+    .header__img-logo{
+        max-width: 400px;
+    }
+
+    .question__line 
+    {
+        width: 806px;
+    }
+
+    .header__text
+    {
+        max-width: 400px;
+    }
+    .header__image {
+        max-width: 27%;
+    }
+    .header__btn--1
+    {
+        margin-right: 18px;
+    }
+     .container {
+        padding: 0 80px;
+    }
+    
+    .schedule__today-line
+    {
+        min-width: 1056px;
+    }
+    .schedule__today-line.--sunday{
+        min-width: 1046px;
+    }
+    
+    .col--time, .element__time {
+        min-width: calc(54px + 37px);
+    }
+    
+    .col--name, .element__name {
+        min-width: 577px;
+    }
+    .col--type, .element__type{
+        min-width: 247px;
+    }
+    .element__process
+    {
+        padding-left: 25px;
+    }
+    .line--courses
+    {
+        min-width: 771px;
+    }
+    .ce1{
+        min-width: 320px;
+        /* background: url('/images/ce_1.svg'); */
+    }
+    .ce2{
+        min-width: 320px;
+    }
+    .ce3{
+        min-width: 320px;
+    }
+    .ce4{
+        min-width: 320px;
+    }
+    .ce5{
+        min-width: 380px;
+
+    }
+    .ce6{
+        min-width: 300px;
+
+    }
+    .ce7{
+        min-width: 309px;
+    }
+    .ce8{
+        min-width: 281px;
+    }
+    .ce9{
+        min-width: 313px;
+
+    }
+    .ce10{
+        min-width: 351px;
+
+    }
+    .ce11{
+        min-width: 316px;
+
+    }
+    .ce12{
+        min-width: 318px;
+
+    }
+    body.--teachers-page .teachers__main {
+        justify-content: space-evenly;
+        transform: translateX(-10px);
+    }
+    
+    body.--teachers-page .teacher__card + .teacher__card {
+        margin-left: 0px;
+    }
+}   
+@media (max-width: 1410px){
+    .event__slider {
+        width: 500px;
+    }
+    .question__line 
+    {
+        width: 776px;
+    }
+    .line--courses
+    {
+        min-width: 721px;
+    }
+    .ce1{
+        min-width: 310px;
+        /* background: url('/images/ce_1.svg'); */
+    }
+    .ce2{
+        min-width: 310px;
+    }
+    .ce3{
+        min-width: 310px;
+    }
+    .ce4{
+        min-width: 320px;
+    }
+    .ce5{
+        min-width: 350px;
+
+    }
+    .ce6{
+        min-width: 290px;
+
+    }
+    .element_name, .element_id
+    {
+        padding-left: 25px;
+    }
+    .ce7 .element_link, .ce12 .element_link{
+        transform: translateX(-20px);
+    }
+    .ce7{
+        min-width: 309px;
+    }
+    .ce8{
+        min-width: 281px;
+    }
+    .ce9{
+        min-width: 313px;
+
+    }
+    .ce10{
+        min-width: 337px;
+
+    }
+    .ce11{
+        min-width: 306px;
+
+    }
+    .ce12{
+        min-width: 318px;
+
+    }
+    span.line--teachers {
+        width: 300px;
+    }
+}
+@media (max-width: 1370px)
+{
+    button.btn-colored.header__btn--2 {
+        margin-top: 20px;
+    }
+    .header__btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__btn--1 
+    {
+        margin-right: 0;
+    }
+    
+}
+
+@media (max-width: 1350px)
+
+{
+    img.footer_photo {
+        top: -140px;
+        transform: translateX(-25px);
+    }
+    nav.footer__nav {
+        gap: 250px;
+    }
+    .rent__wrapper::before {width: 50%;}
+
+.rent__block.--msk {
+    min-width: 442px;
+}
+
+.rent__block .btn-standart {
+    flex-shrink: 0;
+}
+.rent__title {
+    font-size: 64px;
+}
+
+
+
+.rent__wrapper .container {
+    flex-direction: column;
+}
+.rent__btns {
+    flex-direction: column;
+    max-width: 315px;
+}
+
+.rent button.btn-colored {
+    display: block;
+}
+
+
+
+.rent__block.--msk {
+    padding-right: 0px;
+    padding-top: 48px;
+    margin-left: 59px;
+}
+.rent__wrapper::before {
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+}
+
+.rent__wrapper {background-position: bottom;}
+    .questions__wrapper {
+        margin-top: 120px;
+        display: flex;
+        gap: 57px;
+    }
+    /* .question__line 
+    {
+        width: 706px;
+    } */
+    /* .city
+    {
+        transform: translateX(80px);
+    } */
+    .header__photo.--first {
+        display: none;
+    }
+    .header__right {
+        transform: translateX(-100px);
+    }
+    .schedule__today-line
+    {
+        min-width: 906px;
+    }
+    .schedule__today-line.--sunday{
+        min-width: 896px;
+    }
+    
+    .col--time, .element__time {
+        min-width: calc(54px + 17px);
+    }
+    
+    .col--name, .element__name {
+        min-width: 527px;
+    }
+    .col--type, .element__type{
+        min-width: 247px;
+    }
+    .line--courses
+    {
+        min-width: 621px;
+    }
+    .courses__section {
+        flex-wrap: wrap;
+    }
+    
+    .courses__element {
+        max-width: 50%;
+        min-width: 50%;
+        border-radius: 30px 30px 30px 30px;
+    }
+    .element_name, .element_id
+    {
+        padding-left: 25px;
+    }
+    .ce7 .element_link, .ce12 .element_link{
+        transform: translateX(0px);
+    }
+    .element_link{text-align: end;}
+    .events .event__info {
+        max-width: 490px;
+    }
+    
+    .events .event__btns {
+        flex-shrink: 0;
+    }
+    
+    .events button.btn-standart {
+        flex-shrink: 0;
+    }
+    .swiper-pagination.event__pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+        top: 70% !important;
+    }
+    .footer__gong {
+        display: none;
+    }
+    
+    .footer__wrapper {
+        transform: translateX(0px);
+    }
+    
+    .footer__logo {
+        position: static;
+        margin: 40px 0px;
+    }
+    .footer_photo{
+        display: none;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    .classes .class__card {
+        margin-top: 20px;
+    }
+    
+    .classes span.line--teachers {
+        display: none;
+    }
+    
+    .classes .teachers__wrapper-2 {
+        justify-content: space-between;
+    }
+    .classes__main {
+        flex-wrap: wrap;
+    }
+    .schedule__elements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .schedule__today.--teachers {
+
+        min-width: 100%;
+    }
+    
+    .teachers__wrapper-2 {flex-wrap: wrap;}
+    
+    span.line--teachers {
+        min-width: 70%;
+    }
+    .schedule__element {
+        max-width: 45%;
+        margin-right: 15px;
+    }
+    
+    .schedule__element  {
+        margin-top: 15px;
+    }
+    
+    
+    .schedule .form-group {
+        width: 45%;
+    }
+    span.line--teachers {
+        width: 200px;
+    }
+    .schedule__options {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .schedule__cols{
+        display: none;
+    }
+    .schedule .schedule__today {
+        margin-bottom: 25px;
+    }
+    nav.menu .menu__list:first-child
+    {
+        /* margin-left: 45px; */
+    }
+    .schedule__element {
+        min-height: 207px;
+        flex-wrap: wrap;
+    }
+    
+    span.element__time {
+        order: 0;
+        min-width: 50%;
+        max-height: 20px;
+    }
+    
+    span.element__city {
+    
+        order: 1;
+        text-align: end;
+    }
+    
+    span.element__name {
+        order: 2;
+        min-width: 100%;
+    }
+    
+    span.element__type {
+        order: 3;
+        min-width: 100%;
+    }
+    
+    span.element__process {
+        order: 4;
+        margin: 0 auto;
+        padding-top: 10px;
+        min-width: 50%;
+        padding-left: 0;
+        text-align: center;
+        border-radius: 30px;
+        border: 1px solid rgba(107, 114, 118, 0.50);
+    }
+    .question__line 
+    {
+        width: 706px;
+    }
+
+    
+}
+@media (max-width: 1230px)
+{
+    .line--courses
+    {
+        min-width: 521px;
+    }
+}
+@media (max-width: 1200px)
+{
+    .mobile__wrapper
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav.footer__nav {
+        gap: 150px;
+    }
+/*     
+    img.footer_photo {
+        top: -150px;
+        transform: translateX(-24px);
+    } */
+
+.arenda__description {
+    min-width: 301px;
+    padding: 0 15px;
+}
+    .container.questions__wrapper {
+        flex-direction: column;
+    }
+
+    img.questions__img {
+        display: none;
+    }
+    
+    .question__line {
+        min-width: 100%;
+    }
+    .question__answer {
+
+        text-align: center;
+    }
+    .line--courses
+    {
+        min-width: 371px;
+    }
+    .header__right {
+        transform: translateX(0px);
+    }
+    nav.menu{
+        display: none;
+    }
+    .city
+    {
+        display: none;
+    }
+    .mobile-menu
+    {
+        display: block;
+    }
+    .schedule__today-line
+    {
+        min-width: 716px;
+    }
+    .schedule__today-line.--sunday{
+        min-width: 706px;
+    }
+    .sсhedule .sсhedule__title {
+        min-width: 100%;
+    }
+    
+    
+    .schedule__header {
+        flex-wrap: wrap;
+    }
+    
+    .shedule__calendar {
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 1100px){
+    nav.footer__nav {
+        gap: 50px;
+    }
+    
+    
+    
+    .footer__gong {
+        top: -60px;
+    }
+    
+    .footer__logo {
+        top: -60px;
+    }
+    .classes span.line--teachers {
+        display: block;
+    }
+    .event__line.--hidden
+    {
+        display: block !important;
+        margin-top: 100px;
+    }
+    .swiper-pagination.event__pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+        top: 80% !important;
+    }
+    .classes .teachers__wrapper-2 > button.teachers__btn {
+        margin-left: 0;
+    }
+    span.line--teachers {
+        min-width: 50%;
+    }
+    .classes span.line--teachers {
+        min-width: 40%;
+    }
+    .event__info {
+        order: 1;
+    }
+    
+    .event__card {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .event__info {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 980px)
+{
+    .line--courses
+    {
+        min-width: 141px;
+    }
+    .schedule__today-line
+    {
+        min-width: 516px;
+    }
+    .schedule__today-line.--sunday{
+        min-width: 506px;
+    }
+    .header__wrapper {
+            margin-top: 59px;
+
+        flex-direction: column;
+    }
+    .header__photo.--second{
+        display: none;
+    }
+    .header__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+    .header__right
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 0;
+    }
+    .header__img-logo {
+        margin-top: 50px;
+    }
+    /* .header__photo.--third::before {
+        top: calc(50% - 88px);
+    }
+    .header__photo.--third::after {
+        top: calc(50% - 58px);
+    } */
+}
+@media (max-width: 900px)
+{
+    body.--teachers-page .teacher__card {
+        margin: 48px 4.5px 0px;
+    }
+    body.--teachers-page .teachers__main
+    {
+        padding-bottom: 100px;
+    }
+    .classes span.line--teachers {
+        min-width: 30%;
+    }
+    
+    .classes__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .arenda__title {
+        /* margin-left: 19px; */
+        margin-top: 48px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    button.arenda__btn.btn-standart {
+        /* margin-right: 19px; */
+        margin-bottom: 64px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .class__arenda {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .arenda__description {
+        margin-top: 20px;
+        margin-bottom: 28px;
+    }
+    
+    .class__arenda {
+        /* min-height: 270px; */
+        /* min-height: 100%; */
+        height: auto;
+    }
+    
+    ul.footer__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav.footer__nav {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    
+    .footer__wrapper-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    ul.footer__menu.--right {
+        padding-top: 40px;
+    }
+    .arenda__description {
+        max-width: 400px;
+    }
+    .classes span.line--teachers {
+        min-width: 30%;
+    }
+    
+    .classes__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .line--courses
+    {
+        min-width: 221px;
+    }
+    .schedule__elements {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .schedule__element {
+        min-width: 100%;
+    }
+    .schedule__today-line
+    {
+        min-width: 316px;
+    }
+    .schedule__today-line.--sunday{
+        min-width: 306px;
+    }
+    .question__line {
+        width: 300px;
+    }
+    
+    .question__question {
+        font-size: 16px;
+    }
+}
+@media (max-width: 830px){ 
+    .classes span.line--teachers {
+        display: none;
+    }
+    .line--courses
+    {
+        display: none;
+    }
+    .question__question span.text {
+        max-width: 400px;
+    }
+}@media (max-width: 827px)
+{   
+    .teacher__card
+    {
+        max-width: none;
+    }
+    .rent__block {
+        max-width: 315px !important;
+    }
+    
+    .rent__title {
+        min-width: auto;
+    }
+span.line--teachers {
+    display: none;
+}
+.rent__block.--msk {
+    min-width: 315px;
+}
+
+.rent__title {
+    font-size: 36px;
+}
+
+.rent__block.--bron {
+    padding-top: 50px;
+}
+
+.rent__btns {
+    flex-direction: column;
+}
+
+.rent__block.--msk {
+    margin: 0 auto;
+}
+.rent__block.--bron {
+    margin: 0 auto;
+}
+}
+@media (max-width: 750px)
+{   
+    .events button.events__btn.btn-standart.--desktop {
+        display: none;
+    }
+    .events .btn-standart.--hidden {
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .event__btns {
+        flex-direction: column;
+    }
+    
+    button.btn-colored {
+        display: block;
+    }
+    
+    .event__slider.swiper.event1.swiper-initialized.swiper-horizontal.swiper-android.swiper-backface-hidden {
+        width: 315px;
+    }
+    
+    .event__title {
+        font-size: 30px;
+    }
+    
+    .event__when {
+        font-size: 18px;
+    }
+    
+    .event__info {
+        width: 315px;
+        margin-top: -130px;
+    }
+    
+    .swiper-pagination.event__pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+        top: 55% !important;
+    }
+    .event__slider.swiper.event1.swiper-initialized.swiper-horizontal.swiper-ios.swiper-backface-hidden {
+        width: 315px;
+    }
+}
+@media (max-width: 680px)
+{
+    .ce5 .element_link, .ce7 .element_link
+    {
+        transform: translateX(-80px);
+    }
+    .ce5 .element_name, .ce7 .element_name 
+    {
+        padding-left: 23px;
+    }
+    img.questions__img {
+        display: block;
+    }
+    
+    .schedule__today.--questions {
+        align-items: center;
+    }
+    span.questions__text {
+        transform: translateX(10px);
+    }
+    
+    img.questions__img {
+        transform: translateX(20px);
+    }
+    
+    .schedule__today.--questions {
+        transform: translateX(-30px);
+    }
+
+
+.container.questions__wrapper {
+    margin-top: 0;
+}
+
+.questions span.sсhedule__title {
+    margin-top: 120px;
+}
+/* .questions__text, .sсhedule__title 
+{
+       align-self: flex-start;
+    margin-left: 24px;
+} */
+
+.questions__main {
+    margin-top: 100px;
+}
+    
+    .question__question span.text {
+        max-width: 300px;
+    }
+    .question__question span {
+        padding-right: 24px;
+    }
+}
+@media (max-width: 610px)
+{
+    .header__image{
+        display: none;
+    }
+    .header__img-logo, .header__text {
+        max-width: 300px;
+    }
+    .container
+    {
+        padding: 0 50px;
+    }
+}
+@media (max-width: 550px)
+{
+    .class_type {
+        width: 280px;
+        font-size: 36px;
+    }
+    
+    .class__card {
+        max-width: 300px;
+    }
+    .teachers .teachers__btn.--desktop
+    {
+        display: none;
+    }
+    .teachers .teachers__btn.--hidden
+    {
+        display: flex !important;
+        width: 100%;
+        margin-left: 0;
+    }   
+    span.btn__text.--teachers {
+        align-self: center;
+    }
+    button.teachers__btn.--classes {
+        width: 189px;
+        margin: 0px auto 32px auto;
+    }
+    .swiper-pagination.teachers__all_line.swiper-pagination-progressbar.swiper-pagination-horizontal {
+        display: none;
+    }
+    
+    .teachers__navigation {
+        justify-content: center;
+    }
+    
+    .teachers__next {
+        margin-right: 0px;
+    }
+    
+    .swiper-slide.teacher__card {
+        /* transform: translateX(100px); */
+        /* margin-right: 0;
+        margin-right: 0 !important; */
+    } 
+    .classes .sсhedule__title {
+        min-width: 315px;
+    }
+
+span.btn__text.--teachers {
+    align-self: center;
+}
+    .questions__main {
+        margin-top: 150px;
+    }
+    .questions span.sсhedule__title {
+        transform: translateX(-30px);
+    }
+    .form-group {
+        width: 100%;
+    }
+    .courses__element {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .schedule__today-line
+    {
+        min-width: 216px;
+    }
+    .schedule__today-line.--sunday{
+        min-width: 206px;
+    }
+    .rent__btns {
+        margin-bottom: 64px;
+    }
+    section.events {
+        padding-bottom: 64px;
+    }
+    .sсhedule__title 
+    {
+        font-size: 65px;
+    }
+    .container {
+        padding: 0 35px;
+    }
+    span.element__process{
+        min-width: 100%;
+    }
+    .question__question::after {
+        right: 18px;
+    }
+    .classes .teachers__btn.--hidden
+    {
+        display: flex !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 48px;
+    }
+    .classes button.teachers__btn.--desktop{
+        display: none;
+    }
+}
+@media (max-width: 410px)
+{
+
+    .events__title {
+        transform: translateX(-20px);
+    }
+    .event__slider.swiper.event1.swiper-initialized.swiper-horizontal.swiper-ios.swiper-backface-hidden {
+        transform: translateX(-10px);
+    }
+.class__card {
+    min-width: 317px;
+}
+
+.classes span.line--teachers {
+    display: block;
+    min-width: 30%;
+}
+
+.classes .sсhedule__title {
+    min-width: 230px;
+    margin-right: 0px;
+} 
+.classes__main {
+    margin-top: 0px;
+}
+    span.line--teachers {
+        display: block;
+        transform: translateY(-5px);
+        /* min-width: 50%; */
+    }
+    .questions span.sсhedule__title {
+        margin-top: 64px;
+    }
+    .container.teachers__wrapper {
+        padding-top: 64px;
+    }
+    .courses span.line--courses {
+        display: block;
+        min-width: 31%;
+        transform: translateY(4px);
+    }
+    .arenda__title {
+        font-size: 36px;
+    }
+    .teachers .sсhedule__title {
+        padding-right: 27px;
+    }
+    
+    .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-ios.swiper-backface-hidden {
+        margin-top: -35px;
+    }
+    
+    .teachers__navigation {
+        margin-top: 32px;
+        margin-bottom: 50px;
+    }
+    .mobile__wrapper {
+        padding-right: 10px;
+    }
+    .header__content.--open .mobile__wrapper
+    {
+        padding-right: 30px;
+    }
+    .questions__main {
+        margin-top: 60px;
+    }
+    .questions span.text {
+        max-width: 200px !important;
+    }
+    /* span.sсhedule__title {
+        transform: translateX(-30px);
+    }
+    span.questions__text {
+        transform: translateX(20px);
+    }
+    
+    span.sсhedule__title {
+        transform: translateX(-70px);
+    }
+     */
+
+.schedule__today.--questions {
+    transform: translateX(-20px);
+}
+
+span.questions__text {
+    transform: translateX(20px);
+}
+
+.questions span.sсhedule__title {
+    transform: translateX(-65px);
+}
+    .question__question span {
+        padding-right: 10px;
+    }
+
+    
+    span.text {
+        max-width: 200px;
+    }
+    .schedule__showall.--courses span::after {
+        left: 48%;
+    }
+    .ce5 .element_link{
+        transform: translateX(-10px);
+    }
+    .sсhedule__title 
+    {
+        font-size: 36px;
+    }
+    .header__img-logo, .header__text {
+        max-width: 250px;
+    }
+    .container
+    {
+        padding: 0 40px;
+    }
+    .schedule__today-line
+    {
+        min-width: 116px;
+    }
+    .schedule__today-line.--sunday{
+        min-width: 106px;
+    }
+    .shedule__calendar {
+        font-size:  18px;
+
+    }
+    .teacher__img {
+        min-width: 280px;
+    }
+
+
+    .schedule__filter{
+        display: block;
+        position: relative;
+        top: 38px;
+        right: 20px;
+    }
+    .schedule__options{
+        display: none;
+    }
+    .schedule__options.--open
+    {
+        display: block;
+    }
+    .shedule__calendar::before {
+        top: -8px;
+    }
+    .shedule__year
+    {
+        display: none;
+    }
+    .main.--courses
+{
+    padding-bottom: 90px;
+}
+body.--teachers-page span.line--teachers {
+    transform: translate(15px, -5px);
+    min-width: calc(100% - 148px);
+}
+
+body.--teachers-page .teachers__main {
+    transform: translateX(0px);
+    margin-top: 0px;
+}
+}
+
+@media (max-width: 386px)
+{
+    .ce5 .element_link{
+        transform: translateX(-29px);
+    }
+    .ce7 .element_link{
+        transform: translateX(-18px);
+    }
+}
