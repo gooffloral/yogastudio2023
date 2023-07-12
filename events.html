@@ -91,11 +91,92 @@
     <main class="main">
             <div class="container">
               <div class="events__header">
-                <h1 class="events__title">
-                  Мероприятия
-                </h1>
-                <button class="events__btn btn-standart --desktop">Все мероприятия</button>
+                <div class="events__header--wrapper">
+                  <h1 class="sсhedule__title">
+                    Мероприятия
+                  </h1>
+                  <div class="schedule__filter"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16" fill="none">
+                    <rect y="12" width="25" height="2" rx="1" fill="#6B7276"/>
+                    <circle cx="18" cy="13" r="3" fill="#6B7276"/>
+                    <rect y="2" width="25" height="2" rx="1" fill="#6B7276"/>
+                    <circle cx="7" cy="3" r="3" fill="#6B7276"/>
+                    </svg>
+                  </div>
+                  <div class="events__header--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+
+                </div>
+
+                <div class="schedule__options">
+
+                  <div class="form-group">
+                    <div class="dropdown">
+                        <button class="dropdown__button">День недели</button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="travel">Понедельник</li>
+                            <li class="dropdown__list-item" data-value="lessons">Вторник</li>
+                            <li class="dropdown__list-item" data-value="photo">Среда</li>
+                            <li class="dropdown__list-item" data-value="sport">Четверг</li>
+                            <li class="dropdown__list-item" data-value="lessons">Пятница</li>
+                            <li class="dropdown__list-item" data-value="photo">Суббота</li>
+                            <li class="dropdown__list-item" data-value="sport">Воскресенье</li>
+                        </ul>
+                        <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+                    </div>
+                  </div>
+        
+                  <div class="form-group">
+                    <div class="dropdown">
+                        <button class="dropdown__button">Тип занятий</button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="travel">Заметки путешественника</li>
+                            <li class="dropdown__list-item" data-value="lessons">Конспекты по учебе</li>
+                            <li class="dropdown__list-item" data-value="photo">Фотоальбом</li>
+                            <li class="dropdown__list-item" data-value="sport">Дневник спортсмена</li>
+                        </ul>
+                        <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="dropdown">
+                        <button class="dropdown__button">Учитель</button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="travel">Заметки путешественника</li>
+                            <li class="dropdown__list-item" data-value="lessons">Конспекты по учебе</li>
+                            <li class="dropdown__list-item" data-value="photo">Фотоальбом</li>
+                            <li class="dropdown__list-item" data-value="sport">Дневник спортсмена</li>
+                        </ul>
+                        <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="dropdown">
+                        <button class="dropdown__button">Студия</button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="travel">Заметки путешественника</li>
+                            <li class="dropdown__list-item" data-value="lessons">Конспекты по учебе</li>
+                            <li class="dropdown__list-item" data-value="photo">Фотоальбом</li>
+                            <li class="dropdown__list-item" data-value="sport">Дневник спортсмена</li>
+                        </ul>
+                        <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="dropdown">
+                        <button class="dropdown__button">Тип практики</button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="travel">Заметки путешественника</li>
+                            <li class="dropdown__list-item" data-value="lessons">Конспекты по учебе</li>
+                            <li class="dropdown__list-item" data-value="photo">Фотоальбом</li>
+                            <li class="dropdown__list-item" data-value="sport">Дневник спортсмена</li>
+                        </ul>
+                        <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div class="events__main">
                 <div class="event__card--wrapper"  data-id="1">
                     <div class="event__card">
@@ -187,10 +268,13 @@
 
                     </div>
                   </div>
-                  <div class="container --forshowall --400">
-                    <div class="schedule__showall --events">
-                      <span>Показать больше</span>
+                  <div class="container --forshowall ">
+                    <div class="--forshowall --400">
+                      <div class="schedule__showall --events">
+                        <span>Показать больше</span>
+                      </div>
                     </div>
+
                   </div>
                   <!-- <div class="event__line line-standart --all"></div> -->
                 </div>

@@ -367,6 +367,9 @@
     .footer_photo{
         display: none;
     }
+    body.--events-page .footer__wrapper {
+        transform: translateX(0px);
+    }
 }
 
 @media (max-width: 1300px)
@@ -483,6 +486,28 @@
 }
 @media (max-width: 1200px)
 {
+    .body.--events-page .events__header--wrapper{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .body.--events-page .sсhedule__options 
+    {
+        margin-top: 70px;
+    }
+    body.--events-page .form-group + .form-group {
+        margin-left: 0px;
+    }
+
+    body.--events-page .form-group
+    {
+
+        min-width: 100%;
+    }
+    body.--events-page .form-group:first-child
+    {
+        margin-top: 30px;
+    }
     .mobile__wrapper
     {
         display: flex;
@@ -754,6 +779,9 @@
     }
 }
 @media (max-width: 830px){ 
+    body.--events-page .sсhedule__title {
+        padding-right: 0px;
+    }
     .classes span.line--teachers {
         display: none;
     }
@@ -802,17 +830,18 @@ span.line--teachers {
 .rent__block.--bron {
     margin: 0 auto;
 }
+.events button.events__btn.btn-standart.--desktop {
+    display: none;
+}
+.events .btn-standart.--hidden {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 @media (max-width: 750px)
 {   
-    .events button.events__btn.btn-standart.--desktop {
-        display: none;
-    }
-    .events .btn-standart.--hidden {
-        display: block !important;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
     .event__btns {
         flex-direction: column;
     }
@@ -847,6 +876,12 @@ span.line--teachers {
 }
 @media (max-width: 680px)
 {
+
+    .body.--events-page .header__image {
+        display: block;
+        left: 0px;
+        transform: translateX(200px);
+    }
     .ce5 .element_link, .ce7 .element_link
     {
         transform: translateX(-80px);
@@ -859,7 +894,7 @@ span.line--teachers {
         display: block;
     }
     
-    .schedule__today.--questions {
+    /* .schedule__today.--questions {
         align-items: center;
     }
     span.questions__text {
@@ -868,10 +903,26 @@ span.line--teachers {
     
     img.questions__img {
         transform: translateX(20px);
-    }
+    } */
     
     .schedule__today.--questions {
         transform: translateX(-30px);
+    }
+    .schedule__today.--questions {
+        transform: translateX(0px);
+        align-items: flex-start;
+    }
+    
+    span.questions__text {
+        transform: translateX(0px);
+    }
+    
+    img.questions__img {
+        transform: translateX(0px);
+    }
+    
+    .container.questions__wrapper {
+        padding-top: 120px;
     }
 
 
@@ -881,6 +932,7 @@ span.line--teachers {
 
 .questions span.sсhedule__title {
     margin-top: 120px;
+    
 }
 /* .questions__text, .sсhedule__title 
 {
@@ -889,7 +941,7 @@ span.line--teachers {
 } */
 
 .questions__main {
-    margin-top: 100px;
+    margin-top: 32px;
 }
     
     .question__question span.text {
@@ -904,6 +956,20 @@ span.line--teachers {
     .header__image{
         display: none;
     }
+
+    .body.--events-page .header__image 
+    {
+        display: block;
+        left: 0;
+        transform: translateX(0px);
+    }
+
+    .body.--events-page .header__image::before {
+        content: url(../images/circle.png);
+        position: absolute;
+        top: -50px;
+        right: 10px;
+    }
     .header__img-logo, .header__text {
         max-width: 300px;
     }
@@ -914,6 +980,9 @@ span.line--teachers {
 }
 @media (max-width: 550px)
 {
+    .schedule .form-group {
+        width: 100%;
+    }
     .class_type {
         width: 280px;
         font-size: 36px;
@@ -963,9 +1032,9 @@ span.line--teachers {
 span.btn__text.--teachers {
     align-self: center;
 }
-    .questions__main {
-        margin-top: 150px;
-    }
+    /* .questions__main {
+        margin-top: 32px;
+    } */
     .questions span.sсhedule__title {
         transform: translateX(-30px);
     }
@@ -987,7 +1056,8 @@ span.btn__text.--teachers {
         margin-bottom: 64px;
     }
     section.events {
-        padding-bottom: 64px;
+
+            padding-bottom: 84px;
     }
     .sсhedule__title 
     {
@@ -1016,6 +1086,9 @@ span.btn__text.--teachers {
 @media (max-width: 410px)
 {
 
+    .body.--courses .schedule__today.--courses {
+        padding-top: 0px;
+    }
     .events__title {
         transform: translateX(-20px);
     }
@@ -1077,7 +1150,7 @@ span.btn__text.--teachers {
         padding-right: 30px;
     }
     .questions__main {
-        margin-top: 60px;
+        margin-top: -20px;
     }
     .questions span.text {
         max-width: 200px !important;
@@ -1097,10 +1170,12 @@ span.btn__text.--teachers {
 .schedule__today.--questions {
     transform: translateX(-20px);
 }
-
-span.questions__text {
-    transform: translateX(20px);
+.container.questions__wrapper {
+    padding-top: 64px;
 }
+/* span.questions__text {
+    transform: translateX(20px);
+} */
 
 .questions span.sсhedule__title {
     transform: translateX(-65px);
@@ -1157,7 +1232,7 @@ span.questions__text {
     }
     .schedule__options.--open
     {
-        display: block;
+        display: flex;
     }
     .shedule__calendar::before {
         top: -8px;
@@ -1178,6 +1253,12 @@ body.--teachers-page span.line--teachers {
 body.--teachers-page .teachers__main {
     transform: translateX(0px);
     margin-top: 0px;
+}
+.body.--events-page .schedule__filter {
+    display: block;
+    position: relative;
+    top: 15px;
+    right: 0px;
 }
 }
 

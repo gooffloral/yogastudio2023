@@ -297,6 +297,9 @@ border: none;
 	margin-top: 10px;
 }
 
+body.--events-page .form-group + .form-group {
+    margin-left: 24px;
+}
 label {
 	cursor: pointer;
 }
@@ -423,6 +426,23 @@ button.dropdown__button {
     font-family: Cormorant Infant;
     font-size: 80px;
     color: #6B7276;
+}
+body.--events-page .sсhedule__title
+{
+    padding-right: 123px;
+}
+body.--events-page .events__header--wrapper {min-width: 100%; display: flex; }
+
+.events__header--text
+{
+    color: #6B7276;
+font-family: Raleway;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+max-width: 817px;
+transform: translateY(38px);
 }
 .shedule__calendar{
     position: relative;
@@ -1385,6 +1405,7 @@ max-width: 601px;
     position: relative;
     margin-top: 121px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .events__title {
@@ -1395,6 +1416,10 @@ font-style: normal;
 font-weight: 300;
 line-height: 100%;
 }
+button.events__btn.btn-standart.--desktop {
+    max-height: 63px;
+    transform: translateY(25px);
+}
 .events__header::after {
     content: "";
     min-width: 100%;
@@ -1403,6 +1428,9 @@ opacity: 0.4000000059604645;
 background: #6B7276;
 position: absolute;
 top: calc(100% + 34px);
+}
+body.--events-page .events__header::after {
+    content: none;
 }
 
 .events__main {
