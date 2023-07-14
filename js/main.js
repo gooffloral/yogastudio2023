@@ -1,6 +1,17 @@
 // dropdwn schedule
 function ready()
 {
+    let flag = false;
+    // определялки для экрана тут 
+    if(innerWidth < 800)
+{
+  document.querySelector('body.body').classList.toggle('--mobile');
+    flag = true;
+}else
+{
+  document.querySelector('body.body').classList.toggle('--desktop');
+}
+
     // Полифилл для метода forEach для NodeList
 if (window.NodeList && !NodeList.prototype.forEach) {
 	NodeList.prototype.forEach = function (callback, thisArg) {
@@ -71,6 +82,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 
     const schedulebutton = document.querySelector('.schedule__showall.--schedule');
     const coursesbutton = document.querySelector('.schedule__showall.--courses');
+    const coursesmain = document.querySelector('.courses__main');
     const courseselements  = document.querySelectorAll('.courses__element');
     const scheduleoptions = document.querySelector('.schedule__options');
     const scheduleelements = document.querySelectorAll('.schedule__day');
@@ -92,6 +104,18 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
             coursesbutton.style.cssText = 'display: block';
         }
 
+    }
+    if(coursesmain && flag)
+    {
+
+        coursesmain.addEventListener('click', (e) => {
+            let cur = e.target.closest('.courses__element');
+            if(cur)
+            {
+                [...courseselements].filter(x => x != cur).forEach(el => el.classList.remove('--tap'));
+                cur.classList.toggle('--tap');
+            }
+        });
     }
     if(schedulefilter)
     {

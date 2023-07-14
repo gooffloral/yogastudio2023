@@ -16,8 +16,9 @@
 	/*outline: none;*/
 }
 
-a:focus,
-a:active {
+span:focus, a:focus,
+span:active, a:active {
+	color: #36B9EB;
 	/* outline: none;*/
 }
 

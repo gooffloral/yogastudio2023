@@ -6,10 +6,11 @@ if(innerWidth <= 1445 && innerWidth > 1230) //
 {
   slides = 2;
 }
-else
+else if(innerWidth < 827)
 {
   slides = 1;
 }
+
 if(document.querySelector('.mySwiper'))
 {
     const swiper = new Swiper(".mySwiper", {
@@ -28,6 +29,26 @@ if(document.querySelector('.mySwiper'))
           prevEl: ".teachers__prev",
         },
       });
+}
+if(document.querySelector('.course-swiper'))
+{
+  const swipe2 = new Swiper(".course-swiper", {
+    pagination: {
+      el: ".teachers__all_line",
+      type: "progressbar",
+    },
+    slidesPerView: 1,
+    effect: "fade",
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    spaceBetween: 25,
+    navigation: {
+      nextEl: ".teachers__next",
+      prevEl: ".teachers__prev",
+    },
+  });
 }
 if(document.querySelector('.event__slider'))
 {
