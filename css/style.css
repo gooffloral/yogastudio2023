@@ -790,6 +790,7 @@ letter-spacing: 1.2px;
     min-width: 277px;
 }
 .schedule__element{
+    /* max-width: 1250px; */
     display: flex;
     justify-content: start;
     border-radius: 40px;
@@ -1103,10 +1104,7 @@ max-width: 340px;
 {
     rotate: 0.5turn;
 }
-.question__block.--open .question__answer
-{
-    display: block;
-}
+
 .question__block.--open .question__line.--last
 {
     display: block;
@@ -1126,15 +1124,16 @@ max-width: 340px;
     display: none;
 }
 .question__answer{
+    display: block;
 max-width: 757px;
-margin: 48px auto;
+margin: 0px auto;
 color: #6B7276;
 font-family: Raleway;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-display: none;
+
 }
 
 .teachers{
@@ -1800,7 +1799,8 @@ body.--teachers-page .teacher__card:nth-child(5n + 5) {
 }
 
 
-body.--abonements--page .header__image, body.--events-page .header__image , body.--practic-page .header__image{
+body.--abonements--page .header__image, body.--events-page .header__image , body.--practic-page .header__image , 
+body.--event-page .header__image{
     position: absolute;
     left: 300px;
     top: -300px;
@@ -2217,10 +2217,10 @@ letter-spacing: 1.1px;
     position: relative;
     padding-left: 39px;
 }
-.single-course__item:active, .single-course__item:hover
+/* .single-course__item:active, .single-course__item:hover
 {
     color: #36B9EB;
-}
+} */
 .single-course__item:first-child::before
 {
     display: block;
@@ -2347,4 +2347,287 @@ body.--course--page .teachers__navigation {
 }
 body.--course--page .events {
     padding-bottom: 200px;
+}
+.days__wrapper
+{
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: 1000ms ease-in-out;
+}
+.days__wrapper.--open
+{
+    grid-template-rows: 1fr;
+
+}
+.--not-today
+{
+    min-height: 0;
+
+}
+
+body.--mobile .courses__main
+{
+    display: grid;
+    grid-template-rows:  0fr 0fr;
+    transition: 700ms ease-in-out;
+}
+body.--mobile .courses__main.--open
+{
+    grid-template-rows: 0fr 1fr;
+}
+.question__block .days__wrapper
+{
+    transition: 310ms ease-in-out;
+}
+
+.question__block.--open .days__wrapper
+{
+    grid-template-rows: 1fr;
+    padding: 48px 0px;
+}
+
+body.--teacher-page{
+    background: #F9F9F9;
+}
+body.--teacher-page .events
+{
+    background: #FCFCFC;
+}
+body.--teacher-page .events__header h2.sсhedule__title {
+    margin-top: 32px;
+}
+body.--course--page .sсhedule__title, body.--teacher-page .sсhedule__title
+{
+    font-size: 56px;
+}
+body.--teacher-page  .events, body.--event-page .events{
+    padding-bottom: 180px;
+}
+
+.teacher__wrapper {
+    margin-top: 93px;
+    display: flex;
+    justify-content: space-between;
+}
+.teacher__left-side {
+    max-width: 810px;
+    padding-right: 30px;
+}
+.teacher__title {
+    color: #6B7276;
+    font-family: Cormorant Infant;
+    font-size: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.teacher__course {
+    text-align: center;
+    color: #6B7276;
+font-variant-numeric: lining-nums proportional-nums;
+font-family: Raleway;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 18px */
+letter-spacing: 1.8px;
+text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.teacher__course div.-main{
+    margin: 28px 0px;
+}
+.line {
+    flex-grow: 1;
+    height: 1px;
+    max-width: 100%;
+    background-color: #6B7276;
+    opacity: 0.4000000059604645;
+}
+.teacher__info {
+    padding: 21px 90px;
+}
+.teacher__info-block {
+    margin-top: 40px;
+    color: #6B7276;
+font-family: Raleway;
+font-size: 16px;
+}
+.title-2 {
+    margin-bottom: 24px;
+        text-align: left;
+    color: #6B7276;
+font-family: Raleway;
+font-size: 22px;
+font-style: normal;
+letter-spacing: 1.1px;
+}
+.teacher__text + .teacher__text {
+    margin-top: 24px;
+}
+
+.img-block {
+    width: 487px;
+height: 608px;
+border-radius: 80px 0px;
+}
+.--event-page
+.event__wrapper {
+    margin-top: 150px;
+}
+.event__header {
+    display: flex;
+    justify-content: space-between;
+}
+.event__header-left {
+    max-width: 998px;
+}
+
+body.--event-page .sсhedule__title{
+font-size: 57px;
+}
+body.--event-page .event__title.--main {
+    color: #6B7276;
+font-family: Cormorant Infant;
+font-size: 110px;
+font-style: normal;
+font-weight: 300;
+line-height: 100%; 
+}
+body.--event-page button.events__btn.btn-standart.--desktop
+{
+    transform: translateY(10px);
+}
+.event__left-schedule {
+    max-width: 830px;
+    display: flex;
+    align-items: center;
+    color: #6B7276;
+margin-top: 64px;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; /* 31.2px */
+letter-spacing: 1.2px;
+}
+.event__left-schedule-2
+{
+    margin-left: 25px;
+    margin-right: auto;
+}
+.info__btn {
+}
+.info__btn-link {
+}
+.event__header-right {
+    max-width: 280px;
+}
+.img-right {
+    border-radius: 60px 0px;
+    width: 282px;
+    height: 261px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: top !important;
+}
+body.--event-page .teacher__name {
+    margin: 12px 0px 17px;
+font-size: 40px;
+}
+.teacher__practic {
+    color: #6B7276;
+font-family: Raleway;
+font-size: 18px;
+font-style: italic;
+font-weight: 300;
+line-height: normal;
+}
+.event__page-img {
+    max-width: 100%;
+    margin-top: 100px;
+
+height: 402px;
+border-radius: 80px;
+background-repeat: no-repeat !important;
+background-size: cover !important;
+background-position: top !important;
+}
+.about-event {
+    margin-top: 115px;
+}
+
+.about-event__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.about-event-left {
+    max-width: 733px;
+}
+.a-e-l__pretitle {
+    color: #6B7276;
+font-family: Raleway;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 22px */
+letter-spacing: 1.1px;
+margin-bottom: 24px;
+}
+.a-e-l__pretitle.--2
+{
+    margin-top: 39px;
+}
+.a-e-l__text {
+    color: #6B7276;
+font-variant-numeric: lining-nums proportional-nums;
+font-family: Raleway;
+font-size: 16px;
+font-style: normal;
+/* font-weight: 600; */
+line-height: normal;
+}
+.a-e-l__text p{display: block;}
+.a-e-l__text p + p
+{
+
+    margin-top: 24px;
+}
+body.--event-page .-main 
+{
+ margin: 28px 0px 24px;
+}
+.bold {
+    font-weight: bold;
+    font-family: Raleway Medium;
+}
+.about-event-right {
+    max-width: 577px;
+border-radius: 80px 0px;
+background: #E7F2FF;
+}
+.about-event-right div{
+    color: #6B7276;
+font-family: Cormorant Infant;
+font-size: 38px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; 
+margin: 100px 59px 108px 78px;
+}
+
+body.--event-page .practica__booking{
+    background: #F1F1F1;
+    margin-top: 120px;
+    padding-bottom: 120px;
+}
+
+body.--event-page  h2.booking__title {
+    max-width: 395px;
+}
+
+body.--event-page  .booking__main {
+    max-width: 400px;
 }

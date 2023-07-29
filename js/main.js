@@ -91,19 +91,12 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
     const schedulefilter = document.querySelector('.schedule__filter');
     const eventbutton = document.querySelector('.schedule__showall.--events');
     const eventelements = document.querySelectorAll('.event__card--wrapper');
-    if(innerWidth < 550)
+    if(innerWidth < 800)
     {
         if(courseselements && coursesbutton)
         {
-            courseselements.forEach(el => {
-                if(el.dataset.id > 3)
-                {
-                    el.classList.toggle('--hidden');
-                }
-            })
             coursesbutton.style.cssText = 'display: block';
         }
-
     }
     if(coursesmain && flag)
     {
@@ -168,29 +161,102 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
             button.firstElementChild.textContent = "Скрыть";
         }
     }
+
+    const schedule_wrapper = document.querySelector('.schedule-days__wrapper');
+    const courses__main = document.querySelector('.courses__main');
     if(schedulebutton)
     {
         schedulebutton.addEventListener('click', () => {
-            showAll(1, schedulebutton, scheduleelements, 'block', "Показать всю неделю")
+
+            schedule_wrapper.classList.toggle('--open');
+            if(schedule_wrapper.offsetHeight > 0){
+                window.scrollBy({
+                    top: -1 * schedule_wrapper.offsetHeight,
+                    behavior : "smooth"
+                  });
+                // window.scrollBy(0, -1 * schedule_wrapper.offsetHeight) 
+            }
+            if(schedulebutton.firstElementChild.classList.contains('--open'))
+            {
+                schedulebutton.firstElementChild.classList.remove('--open');
+                schedulebutton.firstElementChild.textContent = 'Показать всю неделю';
+            }else
+            {
+                schedulebutton.firstElementChild.classList.add('--open');
+                schedulebutton.firstElementChild.textContent = "Скрыть";
+            }
         });
     }
+    // if(schedulebutton)
+    // {
+    //     schedulebutton.addEventListener('click', () => {
+    //         showAll(1, schedulebutton, scheduleelements, 'block', "Показать всю неделю")
+    //     });
+    // }
     if(coursesbutton)
     {
-        coursesbutton.addEventListener('click', () => {
-            showAll(3, coursesbutton, courseselements, 'grid', "Показать все направления")
-        });
-    }
 
-    console.log(eventelements);
+        coursesbutton.addEventListener('click', () => {
+
+            courses__main.classList.toggle('--open');
+
+            if(courses__main.offsetHeight > 1045){
+                window.scrollBy({
+                    top: -0.8 * courses__main.offsetHeight,
+                    behavior : "smooth"
+                  });
+            }
+            if(coursesbutton.firstElementChild.classList.contains('--open'))
+            {
+                coursesbutton.firstElementChild.classList.remove('--open');
+                coursesbutton.firstElementChild.textContent = 'Показать все направления';
+            }else
+            {
+                coursesbutton.firstElementChild.classList.add('--open');
+                coursesbutton.firstElementChild.textContent = "Скрыть";
+            }
+            // showAll(3, coursesbutton, courseselements, 'grid', "Показать все направления")
+            // document.querySelector('.courses__main').classList.toggle('--open');
+        });
+
+    }
+    const event_wrapper = document.querySelector('.events-days__wrapper');
     if(eventbutton)
     {
         eventbutton.addEventListener('click', () => {
-            showAll(2, eventbutton, eventelements, 'block', "Показать больше")
+            // showAll(2, eventbutton, eventelements, 'block', "Показать больше")
+                event_wrapper.classList.toggle('--open');
+                if(event_wrapper.offsetHeight > 0){
+                    window.scrollBy({
+                        top: (-1 * event_wrapper.offsetHeight) + 140,
+                        behavior : "smooth"
+                      });
+                    // window.scrollBy(0, -1 * schedule_wrapper.offsetHeight) 
+                }
+                if(eventbutton.firstElementChild.classList.contains('--open'))
+                {
+                    eventbutton.firstElementChild.classList.remove('--open');
+                    eventbutton.firstElementChild.textContent = 'Показать всю неделю';
+                }else
+                {
+                    eventbutton.firstElementChild.classList.add('--open');
+                    eventbutton.firstElementChild.textContent = "Скрыть";
+                }
+
         });
     }
 
+
+    document.querySelectorAll('.single-course__link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+            e.target.style.cssText = 'color: #36B9EB;';
+            setTimeout(() => {e.target.style.cssText = 'color: inherit;'}, 1000);
+        });
+    });
 }
 document.addEventListener("DOMContentLoaded", ready);
-
-
-

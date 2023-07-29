@@ -6,6 +6,21 @@
         max-width: 701px;
     }
 
+    .about-event-right {
+        max-width: 540px;
+    }
+    
+    .about-event-left {
+        max-width: 620px;
+    }
+
+    .schedule__element
+    {
+        max-width: 1250px;
+    }
+    .teacher__info {
+        padding: 21px 60px;
+    }
 
 section.single-course__right {
     max-width: 690px;
@@ -252,6 +267,28 @@ section.single-course__right {
 @media (max-width: 1350px)
 
 {
+
+
+    .about-event-right {
+        max-width: 470px;
+    }
+    
+    .about-event-left {
+        max-width: 560px;
+    }
+
+body.--event-page .event__title.--main
+{
+    font-size: 80px;
+}
+
+.event__left-schedule {
+    padding-right: 30px;
+}
+
+    .body.--event-page .info__btn {
+        margin-top: 0px;
+    }
     body.--course--page .teachers__navigation {
         max-width: 601px;
     }
@@ -412,6 +449,9 @@ section.single-course__right {
 @media (max-width: 1300px)
 {
 
+    .body.--event-page .booking__wrapper .info__btn {
+        margin: 48px auto 0px;
+    }
     .single-teacher__card--wrapper {
         margin-left: 38px;
     }
@@ -552,6 +592,18 @@ section.single-course__right {
 
         grid-template-columns: 1.5fr 1.5fr 1.3fr 1.3fr 1fr;
     }
+    .about-event-left {
+        padding-right: 30px;
+    }
+    
+    body.--event-page .event__header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .event__header-right {
+        margin-top: 42px;
+    }
 }    
 
 @media (max-width: 1230px)
@@ -659,6 +711,62 @@ section.single-course__right {
 }
 @media (max-width: 1100px){
 
+    .--event-page .event__wrapper {
+        margin-top: 52px;
+    }
+    
+    .about-event-right {
+        margin-top: 48px;
+    }
+    
+    .about-event__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+.event__left-schedule {
+    flex-wrap: wrap;
+}
+
+body.--event-page .event__left-schedule .info__btn {
+    margin-top: 32px;
+}
+
+body.--event-page .event__header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    .body.--event-page .booking__wrapper .info__btn {
+        margin: 0;
+        margin-top: 48px ;
+    }
+    .img-block {
+        width: 358.229px;
+        height: 405.094px;
+    }
+    
+    h1.teacher__title {
+        font-size: 36px;
+         margin: 24px 0px;
+    }
+    
+    .teacher__info {
+        padding: 21px 0px;
+    }
+    
+    .teacher__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .teacher__left-side {
+        order: 1;
+    }
+    
+    
+    .teacher__info-block {
+        margin-top: 20px;
+    }
     .teachers__next {
         margin-right: 0px;
     }
@@ -1234,9 +1342,63 @@ section.single-course__right {
         padding-right: 24px;
     }
 }
+
+@media (max-width: 680px)
+{
+.header__image {
+    display: none;
+}
+}
 @media (max-width: 610px)
 {
 
+    body.--event-page .event__title.--main {
+        font-size: 36px;
+    }
+    
+    .event__left-schedule {
+        margin-top: 32px;
+        font-size: 18px;
+    }
+    
+    body.--event-page .teacher__name {
+        font-size: 35px;
+    }
+    
+    .event__page-img {
+        margin-top: 48px;
+    }
+    
+    section.about-event {
+        margin-top: 48px;
+    }
+    
+    .about-event-right div {
+        font-size: 22px;
+        margin: 48px 38px 56px;
+    }
+    
+    body.--event-page .practica__booking {
+        margin-top: 68px;
+        padding-bottom: 64px;
+    }
+    
+    body.--event-page h2.booking__title {
+        font-size: 35px;
+    }
+    
+    .body.--event-page .booking__wrapper .info__btn {
+        margin-top: 32px;
+    }
+    
+    .events__header {
+        margin-top: 48px;
+        /* font-size: 16px; */
+    }
+    
+    body.--event-page .sсhedule__title {
+        font-size: 36px;
+    }
 .single-course__wrapper::before {
     height: 68%;
 
@@ -1248,7 +1410,7 @@ section.single-course__right {
         display: none;
     }
 
-    .body.--events-page .header__image, .body.--abonements--page .header__image, .body.--practic-page .header__image
+    .body.--event-page .header__image, .body.--events-page .header__image, .body.--abonements--page .header__image, .body.--practic-page .header__image
     {
         display: block;
         left: 0;
@@ -1314,6 +1476,18 @@ section.single-course__right {
 @media (max-width: 550px)
 {
 
+    .teacher__left-side {
+        padding: 0;
+    }
+    
+    .teacher__wrapper {
+        margin-top: 40px;
+    }
+    
+    .img-block {
+        width: 320px;
+        height: 380px;
+    }
     .practic__essence {font-size: 25px; padding: 48px 0px 60px;}
     img.practic__image {
         width: 315px;
@@ -1429,6 +1603,25 @@ span.btn__text.--teachers {
 }
 @media (max-width: 430px)
 {
+    h1.event__title.--main {
+        max-width: 277px;
+    }
+    
+    .event__left-schedule-2 {
+        margin-left: 0px;
+    }
+    
+    .event__left-schedule-1 {
+        margin-right: 25px;
+    }
+    
+    .event__header-right {
+        margin-left: 5%;
+    }
+    
+    body.--event-page  .info__btn {
+        max-width: 301px;
+    }
     .single-course__line {
         max-width: calc(100% - 240px - 15px);
         transform: translateY(3px);
@@ -1559,7 +1752,7 @@ span.btn__text.--teachers {
     .ce5 .element_link{
         transform: translateX(-10px);
     }
-    .sсhedule__title 
+    .sсhedule__title , body.--course--page .sсhedule__title, body.--teacher-page .sсhedule__title
     {
         font-size: 36px;
     }

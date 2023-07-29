@@ -37,17 +37,21 @@ if(document.querySelector('.course-swiper'))
       el: ".teachers__all_line",
       type: "progressbar",
     },
-    slidesPerView: 1,
-    effect: "fade",
+    //  slidesPerView: 1,
+    //  effect: "fade",
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
     },
-    spaceBetween: 25,
+    // spaceBetween: 25,
     navigation: {
       nextEl: ".teachers__next",
       prevEl: ".teachers__prev",
     },
+    fadeEffect: { crossFade: true },
+
+    slidersPerView: 1,
+    effect: "fade"
   });
 }
 if(document.querySelector('.event__slider'))
