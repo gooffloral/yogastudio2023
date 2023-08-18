@@ -2631,3 +2631,262 @@ body.--event-page  h2.booking__title {
 body.--event-page  .booking__main {
     max-width: 400px;
 }
+
+header.--arenda .menu__item , header.--arenda .menu__link, header.--arenda .city
+{
+    color: #FFF;
+}
+header.--arenda .menu__list .menu__link--second , .menu__list .menu__item--second
+{
+    color: #1E1E1E;
+}
+
+header.--arenda  .city__active::before {
+    content: url(/images/arenda_city.svg);
+
+}
+
+header.--arenda  .city__active::after, header.--arenda .link--arrow::after  {
+    content: url(/images/arenda_arrow_down.svg);
+}
+.arenda-header__image {
+    background: url('/images/arenda.jpg'), lightgray 50% / cover no-repeat;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    height: 983px;
+    width: 100%;
+}
+.m-header-wrapper {
+    margin-top: 137px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 344px;
+}
+.title {
+    color: #F9F9F9;
+/* H/1 */
+font-family: Cormorant Infant;
+font-size: 80px;
+font-style: normal;
+font-weight: 300;
+line-height: 100%; 
+}
+.under_title {
+    margin-top: 31px;
+    max-width: 1027px;
+color: #F9F9F9;
+font-family: Raleway;
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.info-btns {
+    gap: 20px;
+    margin-top: 83px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.info-btn {
+    padding: 30px 69px 30px 40px ;
+    color: #F9F9F9;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: -webkit-inline-flex;
+display: -ms-inline-flexbox;
+
+    max-width: 450px;
+max-height: 127px;
+border-radius: 60px 0px;
+background: rgba(180, 180, 180, 0.20);
+backdrop-filter: blur(12px);
+}
+.info-btn svg{
+    min-width: max-content;
+}
+.info-btn div
+{
+
+    margin-left: 31px;
+}
+.info-btn div.tiny-text
+{
+    transform: translateY(10px);
+}
+.buy-btn {
+    color: #FFF;
+text-align: center;
+padding: 54px 65px 51px 69px;
+font-family: Raleway;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 22px */
+letter-spacing: 1.1px;
+text-transform: uppercase;
+    max-width: 450px;
+    max-height: 127px;
+    border-radius: 60px 0px;
+background: #B0BFD0;
+backdrop-filter: blur(12px);
+transition: all 0.6s ease-out;
+}
+.buy-btn:hover{
+    color: #B0BFD0;
+    background: #FFF;
+
+}
+
+body.--arenda-page .event__img{
+    max-width: 1410px;
+    max-height: 386px;
+    border-radius: 60px 60px 60px 0px;
+}
+
+body.--arenda-page .event__img img{
+    min-width: 100%;
+    max-height: 386px;
+}
+
+body.--arenda-page .teachers__navigation {
+    margin-top: 65px;
+}
+
+body.--arenda-page .swiper-pagination.teachers__all_line {
+    flex-grow: 1;
+}
+.--grey{
+    color: #6B7276;
+}
+
+.add-info{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+.add-line
+{
+    width: 1px;
+height: 100px;
+opacity: 0.4;
+background: #6B7276;
+}
+.add-text{
+    max-width: 889px;
+color: #6B7276;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.title_2
+{
+    max-width: min-content;
+    color: #6B7276;
+font-family: Cormorant Infant;
+font-size: 56px;
+font-style: normal;
+font-weight: 300;
+line-height: 100%; 
+}
+
+section#arenda-price {
+    font-family: Raleway;
+    font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 22px */
+    padding-top: 112px;
+    background-color: #E6F0FE;
+    padding-bottom: 200px;
+}
+section#arenda-price .title
+{
+    color: #6B7276;
+    
+}
+.price__blocks {
+
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.price__block {
+    max-width: 686px;
+    flex-grow: 1;
+    max-height: 352px;
+}
+.price__title {
+    color: #6B7276;
+font-family: Raleway;
+font-size: 22px;
+
+letter-spacing: 1.1px;
+}
+.price__prices {
+    margin-top: 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.price__entity + .price__entity{
+    margin-top: 12px;
+}
+
+.price__entity {
+    flex-grow: 1;
+    color: #6B7276;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+font-size: 18px;
+letter-spacing: 0.9px;
+    max-width: 686px;
+    padding: 30px;
+    max-height: 76px;
+border-radius: 40px;
+border: 1px solid rgba(107, 114, 118, 0.50);
+}
+.price__entity:nth-child(n + 2) .price__main
+{
+    transform: translateY(-5px);
+}
+.price__main {
+    margin-left: 19px;
+}
+.price__price{
+    text-align: center;
+}
+.price__buy {
+    color: #36B9EB;
+text-align: right;
+cursor: pointer;
+}
+.price__extra{
+    margin-top: 56px;
+    color: #6B7276;
+font-size: 16px;
+font-style: italic;
+display: flex;
+}
+.price__extra div + div 
+{
+   padding-left: 8%;
+}
+
+
+.header__content.--open a {
+    color: #6B7276;
+}

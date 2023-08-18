@@ -68,3 +68,21 @@ if(document.querySelector('.event__slider'))
         },
       });
 }
+if(document.querySelector('.arenda__slider'))
+{
+    const swiper1 = new Swiper(".arenda__slider", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        slidesPerView: 1,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".teachers__next",
+          prevEl: ".teachers__prev",
+        },
+      });
+}

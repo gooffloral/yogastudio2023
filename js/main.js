@@ -119,10 +119,22 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
     const body = document.querySelector('body.body');
     if(mobilebutton)
     {
+        let logoimg = document.querySelector('img#logo');
     mobilebutton.addEventListener('click', () => 
     {
         headercontent.classList.toggle('--open');
         body.classList.toggle('dis-scroll');
+        if(logoimg)
+        {
+            if(headercontent.classList.contains('--open'))
+            {
+                logoimg.src = 'images/logo-header-vector.svg';
+            }else
+            {
+                logoimg.src = 'images/arenda_logo.svg';
+            }
+            
+        }
     });
     }      
 
